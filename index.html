@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estadística de Mensajes</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  }
+
+  .card .info {
+    flex-grow: 1;
+  }
+
+  .card .info h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+
+  .card .info p {
+    margin: 5px 0 0;
+    color: #bbb;
+  }
+
+  .card .info .percentage {
+    color: #4caf50;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #6b4c2a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffa500;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="info">
+    <h1>220</h1>
+    <p>Messages</p>
+    <div class="percentage">
+      <span>▲ 3.46%</span>
+      <span>Since last month</span>
+    </div>
+  </div>
+  <div class="icon">
+    <!-- Icono de mensaje usando SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M21 6h-18c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h18v-14zm0-2c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2h-18l-3 3v-19c0-1.1.9-2 2-2h19z"/>
+    </svg>
+  </div>
+</div>
+
+</body>
+</html>
